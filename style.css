@@ -1,0 +1,195 @@
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.photborder {
+    border: #EB1D24 2px solid;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+.b612-regular {
+    font-family: "B612", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .b612-regular-italic {
+    font-family: "B612", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .b612-bold {
+    font-family: "B612", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .b612-bold-italic {
+    font-family: "B612", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: "punkboy";
+    src: url(punkboy/punkboy_tbs.ttf);
+}
+
+.bg-img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*NAVBARS*/
+.activated {
+    color: #EB1D24 !important;
+}
+
+.headfont {
+    font-family: 'League Spartan';
+    font-size: 40px;
+    font-weight: 1000;
+    height: 50px;
+    width: 120px;
+    color: white;
+}
+
+.navbar {
+    padding-top: 555px;
+    position: absolute;
+}
+
+.navbar-nav > li {
+    padding: 20px;
+}
+
+.nav-item:hover {
+    height: 90px;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    animation: imageChange 0.4s infinite;
+}
+
+.nav-item2:hover {
+    height: 90px;
+    padding-top: 10px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    animation: imageChange2 0.4s infinite;
+}
+
+@keyframes imageChange {
+    0% {
+        background-image: url("images/animate/Vector1.png");
+    }
+    33.33% {
+        background-image: url("images/animate/Vector4.png");
+    }
+    66.66% {
+        background-image: url("images/animate/Vector3.png");
+    }
+    100% {
+        background-image: url("images/animate/Vector1.png"); /* Repeat the first image to create a loop */
+    }
+}
+
+@keyframes imageChange2 {
+    0% {
+        background-image: url("images/animate/Vector2diff.png");
+    }
+    33.33% {
+        background-image: url("images/animate/Vector4diff.png");
+    }
+    66.66% {
+        background-image: url("images/animate/Vector3diff.png");
+    }
+    100% {
+        background-image: url("images/animate/Vector2diff.png"); /* Repeat the first image to create a loop */
+    }
+}
+/*NAVBARS*/
+
+
+/*ABOUT*/  
+#about{
+    padding-top: 800px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+}
+
+.aboutbody {
+    background-color: black;
+}
+
+.about_headfont {
+    font-family: 'League Spartan';
+    font-size: 100px;
+    font-weight: bolder;
+    height: 50px;
+    width: 120px;
+    color: white;
+}
+
+.about_subhead {
+    font-family: "Just Another Hand", cursive;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: normal;
+    color: white;
+    padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.underlay-l {
+    transition: 0.2s ease-in-out;
+}
+.underlay-r {
+    transition: 0.2s ease-in-out;
+}
+
+.rotate {
+    position: relative;
+}
+
+.rotate:hover .overlay {
+    transition: 0.2s ease;
+    transform: rotate(20deg);
+}
+
+.rotate:hover .underlay-l{
+    transition: 0.2s ease;
+    background-color: #EB1D24;
+    border: #EB1D24 2px solid;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.rotate:hover .underlay-r{
+    transition: 0.2s ease;
+    background-color: #EB1D24;
+    border: #EB1D24 2px solid;
+    border-radius: 20px;
+    padding-right: 20px;
+}
+
+
+/*ABOUT*/  
+
+
